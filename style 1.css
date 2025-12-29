@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Custom Background Gradient */
+.bg-gradient-custom {
+    background: linear-gradient(135deg, #111827 0%, #7e22ce 50%, #8b5cf6 100%);
+}
+
+/* Pulse Animation */
+.animate-pulse-custom {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.mix-blend-soft-light {
+    mix-blend-mode: soft-light;
+}
+
+/* Custom Tailwind Colors */
+.text-gradient-purple { color: #a855f7; }
+.text-gradient-pink { color: #ec4899; }
+.text-gradient-cyan { color: #06b6d4; }
+.text-gradient-blue { color: #3b82f6; }
+.text-gradient-green { color: #10b981; }
+.text-gradient-yellow { color: #f59e0b; }
+.text-gradient-orange { color: #f97316; }
+
+.bg-gradient-purple { background-color: #a855f7; }
+.bg-gradient-pink { background-color: #ec4899; }
+.bg-gradient-cyan { background-color: #06b6d4; }
+.bg-gradient-blue { background-color: #3b82f6; }
+.bg-gradient-green { background-color: #10b981; }
+.bg-gradient-yellow { background-color: #f59e0b; }
+.bg-gradient-orange { background-color: #f97316; }
+
+/* Gradient Text Classes */
+.bg-gradient-to-r-purple-cyan {
+    background: linear-gradient(to right, #a855f7, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r-purple-pink-cyan {
+    background: linear-gradient(to right, #a855f7, #ec4899, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r-purple-pink {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r-cyan-blue {
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r-pink-purple {
+    background: linear-gradient(to right, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
